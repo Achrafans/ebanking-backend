@@ -1,4 +1,5 @@
 package net.achraf.ebankingbackend.enums;
 
-public class OperationType {
+public enum OperationType {
+    DEBIT, CREDIT
 }
