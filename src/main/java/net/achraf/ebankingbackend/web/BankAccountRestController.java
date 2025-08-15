@@ -61,5 +61,10 @@ public class BankAccountRestController {
 
     }
 
+    @GetMapping("accounts/customer/{customerId}")
+    public List<BankAccountDTO> getBankAccountsByCustomer(@PathVariable String customerId) {
+        return this.bankAccountService.getBankAccountsByCustomer(customerId);
+    }
+
 
 }
